@@ -1,0 +1,11 @@
+{
+  "name": "azenix-web",
+  "version": "1.0.0",
+  "description": "AzeniX Website",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "latest"
+  }
+}

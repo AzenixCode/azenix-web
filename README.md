@@ -1,2 +1,2 @@
-# azenix-web
-Web page of AzeniX
+# AzeniX
+Web page of AzeniX - new and unique cryptocurrency.
