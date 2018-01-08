@@ -42,7 +42,9 @@
 
         var homeSection = $('.home-section'),
             navbar = $('.navbar-custom'),
+			navbarBrand = $('.navbar-brand'),
             navHeight = navbar.height(),
+			caption = $('.caption-content > .azenix-title-size-1'),
             worksgrid = $('#works-grid'),
             width = Math.max($(window).width(), window.innerWidth),
             mobileTest = false;
@@ -65,6 +67,7 @@
         $(window).scroll(function () {
             effectsHomeSection(homeSection, this);
             navbarAnimation(navbar, homeSection, navHeight);
+			navbarBrandAnimation(navbarBrand, caption);
         });
 
         /* ---------------------------------------------- /*
@@ -125,6 +128,20 @@
                 }
             }
         }
+		
+		/* ---------------------------------------------- /*
+         * Navbar brand animation
+         /* ---------------------------------------------- */
+		function navbarBrandAnimation(navbarBrand, caption, captionHeight) {
+			var topScroll = $(window).scrollTop();
+			if (navbarBrand.length > 0 && caption.length > 0) {
+				if (topScroll >= caption.offset().top + caption.height() + 10) {
+					navbarBrand.fadeIn(450);
+				} else {
+					navbarBrand.fadeOut(450);
+				}
+			}
+		}
 
         /* ---------------------------------------------- /*
          * Navbar submenu
