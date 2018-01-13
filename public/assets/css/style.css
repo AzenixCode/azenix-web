@@ -1588,6 +1588,10 @@ General Styles - Owlcarousel
 /*--------------------------------------------------------------
 	Team
 --------------------------------------------------------------*/
+#team h2 {
+  text-align: center;
+}
+
 .team-item {
   position: relative;
   text-align: center;
@@ -1672,6 +1676,47 @@ General Styles - Owlcarousel
 }
 
 /*--------------------------------------------------------------
+	Roadmap
+--------------------------------------------------------------*/
+.timeline-item {
+  padding: 3em 2em 2em;
+  position: relative;
+  color: rgba(0, 0, 0, 0.7);
+  border-left: 2px solid rgba(0, 0, 0, 1);
+}
+.timeline-item p {
+  font-size: 1rem;
+}
+.timeline-item::before {
+  content: attr(date-is);
+  position: absolute;
+  left: 2em;
+  font-weight: bold;
+  top: 1em;
+  display: block;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.timeline-item::after {
+  width: 10px;
+  height: 10px;
+  display: block;
+  top: 1em;
+  position: absolute;
+  left: -6px;
+  border-radius: 10px;
+  content: '';
+  border: 2px solid rgba(0, 0, 0, 1);
+  background: white;
+}
+.timeline-item:last-child {
+  -o-border-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 60%, transparent) 1 100%;
+     border-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 1) 60%, transparent) 1 100%;
+     border-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 60%, transparent) 1 100%;
+}
+
+/*--------------------------------------------------------------
 	Fun fact
 --------------------------------------------------------------*/
 .count-item {
@@ -1704,6 +1749,13 @@ General Styles - Owlcarousel
 
 .request-cta {
   padding: 50px 0px;
+}
+
+
+.social-container {
+  height: 120px;
+  text-align: center;
+  font-size: 40px;
 }
 
 /*--------------------------------------------------------------
