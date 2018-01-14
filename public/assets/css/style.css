@@ -930,32 +930,6 @@ blockquote {
   margin-top: -35px;
 }
 
-/* Restaurant module header */
-.alt-module-subtitle {
-  display: table;
-}
-
-.alt-module-subtitle h5 {
-  display: table-cell;
-  white-space: pre;
-  padding: 0 8px;
-  color: #111;
-}
-
-/* Finance case study header */
-.finance-image-content {
-  border: 1px solid #e5e5e5;
-  padding: 60px 0px;
-}
-
-.finance-image-content .module-title {
-  margin-bottom: 20px;
-}
-
-.finance-image-content .alt-features-item {
-  margin-top: 40px;
-}
-
 /* Landing Page */
 .landing-reason .module-title {
   color: #e6af4b;
@@ -983,114 +957,9 @@ blockquote {
   letter-spacing: 8px;
 }
 
-/*--------------------------------------------------------------
-	Slider & Carousel
---------------------------------------------------------------*/
-/* -------------------------------------------------------------------
-General Styles - FlexSlider
-------------------------------------------------------------------- */
-.flex-direction-nav a,
-.flex-control-nav > li > a {
-  transition: all 0.3s ease-in-out 0s;
-}
-
-.flex-direction-nav a {
-  position: absolute;
-  display: block;
-  height: 100%;
-  width: 50%;
-  top: 0;
-  z-index: 10;
-  overflow: hidden;
-  opacity: 0;
-  margin: 0;
-}
-
-.flex-direction-nav .flex-prev {
-  opacity: 0;
-  left: 0;
-  cursor: url(../images/prev-light.png), e-resize;
-}
-
-.flex-direction-nav .flex-next {
-  opacity: 0;
-  right: 0;
-  cursor: url(../images/next-light.png), e-resize;
-}
-
-.flex-control-nav {
-  position: absolute;
-  width: auto;
-  left: 50%;
-  bottom: 20px;
-  z-index: 11;
-  text-align: center;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-}
-
-.flex-control-nav > li {
-  display: inline-block;
-  margin: 5px 3px;
-}
-
-.flex-control-nav > li > a {
-  background: transparent;
-  border: 1px solid #fff;
-  display: block;
-  height: 6px;
-  width: 6px;
-  border-radius: 6px;
-}
-
-.flex-control-nav > li > a:hover,
-.flex-control-nav > li > a.flex-active {
-  background: #fff;
-}
-
 /* -------------------------------------------------------------------
 Hero Slider
 ------------------------------------------------------------------- */
-.hero-slider {
-  margin: 0 !important;
-}
-
-.hero-slider .slides > li {
-  display: none;
-  -webkit-backface-visibility: hidden;
-}
-
-.hero-slider,
-.hero-slider .flex-viewport {
-  height: 100% !important;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-}
-
-.hero-slider .slides {
-  height: 100% !important;
-  transition-delay: 1s;
-}
-
-.hero-slider .flex-direction-nav a {
-  width: 15%;
-}
-
-.hero-slider .slides li {
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  height: 100% !important;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-}
-
 /* Caption */
 .azenix-caption {
   position: relative;
@@ -1700,14 +1569,14 @@ General Styles - Owlcarousel
 }
 .timeline-item::after {
   width: 10px;
-  height: 10px;
+  height: 25px;
   display: block;
-  top: 1em;
+  top: 60px;
   position: absolute;
   left: -6px;
-  border-radius: 10px;
-  content: '';
-  border: 2px solid rgba(0, 0, 0, 1);
+  font-size: 15px;
+  font-family: FontAwesome;
+  content: '\f046';
   background: white;
 }
 .timeline-item:last-child {
