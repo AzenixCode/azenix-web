@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "AzeniX Website",
   "scripts": {
-    "start": "node server.js"
+    "start:dev": "node server.js",
+    "start:production": "SET NODE_ENV = production  && node server.js"
   },
   "dependencies": {
     "express": "latest"
