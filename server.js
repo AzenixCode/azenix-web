@@ -1,14 +1,16 @@
 var express = require("express");
+var compression = require('compression');
 var app = express();
 var router = express.Router();
 var path = __dirname + '/public/views/';
+
+app.use(express.static(__dirname + '/public'));
+app.use(compression());
 
 router.use(function (req, res, next) {
   console.log("/" + req.method);
   next();
 });
-
-app.use(express.static(__dirname + '/public'));
 
 router.get("/", function (req, res) {
   res.sendFile(path + "index.html");
