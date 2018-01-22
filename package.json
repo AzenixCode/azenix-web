@@ -2,14 +2,26 @@
   "name": "azenix-web",
   "version": "1.0.0",
   "description": "AzeniX Website",
+  "contributors": [
+    "Daniel Nováčik",
+    "Heye Everts",
+    "Katlina"
+  ],
   "scripts": {
-    "start:dev": "node server.js",
-    "start:production": "SET NODE_ENV = production  && node server.js"
+    "create-dirs": "mkdirp dist/assets/js && mkdirp dist/assets/css && mkdirp dist/views",
+    "uglify": "uglifyjs public/assets/js/*.js --output dist/assets/js/bundle.min.js",
+    "minify": "cleancss -o dist/assets/css/bundle.min.css public/assets/css/*.css ",
+    "copy-files": "copyfiles -u 2 public/assets/images/**/* dist/assets && copyfiles -u 2 public/assets/fonts/* dist/assets",
+    "start": "npm run create-dirs && npm run copy-files && npm run uglify && npm run minify && node server.js"
   },
   "dependencies": {
     "express": "latest"
   },
   "devDependencies": {
-    "compression": "^1.7.1"
+    "clean-css-cli": "^4.1.10",
+    "compression": "^1.7.1",
+    "copyfiles": "^1.2.0",
+    "mkdirp": "^0.5.1",
+    "uglify-js": "^3.3.8"
   }
 }

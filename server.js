@@ -5,11 +5,11 @@ var router = express.Router();
 var path = __dirname + "/public/views/";
 
 app.use(compression());
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/dist'));
 
 app.get("/", function (req, res) {
-  res.sendFile(path + "index.html");
-});
+    res.sendFile(__dirname + "/dist/views/index.html");
+  });
 
 app.listen(3000, function () {
   console.log("Live at Port 3000");
