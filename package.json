@@ -8,8 +8,8 @@
     "Katlina"
   ],
   "scripts": {
-    "uglify": "uglifyjs public/assets/js/*.js -o public/assets/js/bundle.min.js",
-    "minify": "cleancss -o public/assets/css/bundle.min.css public/assets/css/*.css ",
+    "uglify": "uglifyjs public/assets/js/*.js -o public/assets/js/min/bundle.min.js",
+    "minify": "cleancss -o public/assets/css/min/bundle.min.css public/assets/css/*.css",
     "start": "npm run uglify && npm run minify && node server.js"
   },
   "dependencies": {

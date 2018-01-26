@@ -1367,6 +1367,7 @@ General Styles - Owlcarousel
 
 .footer .copyright {
   margin: 0;
+  text-align: center;
 }
 
 .footer .footer-social-links {
@@ -1851,18 +1852,6 @@ General Styles - Owlcarousel
   .side-image-text {
     padding-left: 15px;
     padding-right: 15px;
-  }
-  /* Restaurant menu */
-  .menu-title,
-  .menu-detail,
-  .menu-price-detail {
-    text-align: center;
-  }
-  .align-center-sm {
-    text-align: center;
-  }
-  .align-left-sm {
-    text-align: left;
   }
 }
 
