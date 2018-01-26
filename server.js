@@ -5,10 +5,10 @@ var router = express.Router();
 var path = __dirname + "/public/views/";
 
 app.use(compression());
-app.use(express.static(__dirname + '/dist'));
+app.use(express.static(__dirname + '/public'));
 
 app.get("/", function (req, res) {
-    res.sendFile(__dirname + "/dist/views/index.html");
+    res.sendFile(__dirname + "/public/views/index.html");
   });
 
 app.listen(3000, function () {

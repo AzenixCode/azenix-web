@@ -1114,8 +1114,17 @@ General Styles - Owlcarousel
   color: #fff;
 }
 
-.navbar-custom .nav li > a {
+.navbar-custom:not(.navbar-transparent) .nav li > a {
   position: relative;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.navbar-custom.navbar-transparent .nav li > a {
+  position: relative;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.navbar-custom.navbar-transparent .dropdown-menu > li > a {
   color: rgba(255, 255, 255, 0.7);
 }
 
