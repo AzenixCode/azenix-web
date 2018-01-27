@@ -64,7 +64,7 @@ a,
 
 .navbar-brand {
 	display: none;
-	padding-top: 10px !important;
+	padding-top: 5px !important;
 }
 
 /* Reset box-shadow */
@@ -983,40 +983,6 @@ Hero Slider
   text-align: center;
 }
 
-/* -------------------------------------------------------------------
-General Styles - Owlcarousel
-------------------------------------------------------------------- */
-.owl-controls {
-  margin-top: 40px;
-}
-
-.owl-pagination div {
-  display: inline-block;
-}
-
-.owl-controls .owl-page span {
-  background: transparent;
-  border: 1px solid #111;
-  display: block;
-  height: 6px;
-  width: 6px;
-  margin: 0 3px 5px;
-  border-radius: 6px;
-  transition: all 0.3s ease-in-out 0s;
-}
-
-.owl-controls .owl-page.active span,
-.owl-controls.clickable .owl-page:hover span {
-  background: #111;
-}
-
-.owl-controls .owl-buttons > div {
-  display: inline-block;
-  margin: 5px;
-  font-size: 14px;
-  color: #111;
-}
-
 /*--------------------------------------------------------------
 	Preloader
 --------------------------------------------------------------*/
@@ -1114,8 +1080,17 @@ General Styles - Owlcarousel
   color: #fff;
 }
 
-.navbar-custom .nav li > a {
+.navbar-custom:not(.navbar-transparent) .nav li > a {
   position: relative;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.navbar-custom.navbar-transparent .nav li > a {
+  position: relative;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.navbar-custom.navbar-transparent .dropdown-menu > li > a {
   color: rgba(255, 255, 255, 0.7);
 }
 
@@ -1358,6 +1333,7 @@ General Styles - Owlcarousel
 
 .footer .copyright {
   margin: 0;
+  text-align: center;
 }
 
 .footer .footer-social-links {
@@ -1506,6 +1482,10 @@ General Styles - Owlcarousel
 
 .team-detail p {
   font-size: 14px;
+}
+
+.team-social {
+  font-size: 16px;
 }
 
 .team-social a {
@@ -1711,6 +1691,18 @@ General Styles - Owlcarousel
   }
 }
 
+@media (min-width: 768px) and (max-width: 990px) {
+  .azenix-caption img.caption-logo {
+    width: 40%;
+  }
+}
+
+@media (max-width: 769px) {
+  .team-social {
+    font-size: 25px;
+  }
+}
+
 @media (max-width: 767px) {
   /* Navbar */
   .navbar-custom .navbar-nav {
@@ -1743,46 +1735,22 @@ General Styles - Owlcarousel
     right: 7px;
     content: "\f106";
   }
-  /* Shop navbar */
-  .navbar-custom .navbar-nav > li:last-child.navbar-cart > a {
-    padding-left: 15px;
-  }
-  .navbar-custom .cart-item-number {
-    display: none;
-  }
-  .navbar-custom .navbar-cart > a:after {
-    content: "\f107";
-  }
-  .navbar-custom .navbar-cart-item a {
-    border: 0 !important;
-  }
-  .dropdown-menu.cart-list {
-    text-align: left;
-    border-bottom: 1px solid rgba(73, 71, 71, 0.15) !important;
-  }
-  .navbar-cart-item {
-    border: none;
-    border-bottom: 1px solid rgba(73, 71, 71, 0.15) !important;
-    padding-bottom: 10px;
-  }
-  .navbar-cart-img {
-    display: none;
-  }
-  .navbar-cart-title {
-    white-space: normal;
-    padding: 0;
-    margin-left: 0;
-  }
   /* Headers */
   .azenix-title-size-1 {
     letter-spacing: 2px;
     font-size: 14px;
+    width: 75%;
+    height: auto;
+    margin: auto;
   }
   .azenix-title-size-2 {
     line-height: 1.3;
     letter-spacing: 2px;
     font-size: 16px;
     opacity: .8;
+  }
+  .azenix-title-size-2 h1 {
+    font-size: 25px;
   }
   .azenix-title-size-3 {
     letter-spacing: 4px;
@@ -1806,14 +1774,6 @@ General Styles - Owlcarousel
     width: auto;
     margin: 0 auto 8px;
   }
-  /* Callout */
-  .callout-text {
-    margin: 0 0 30px;
-  }
-  .callout-text,
-  .callout-btn-box {
-    text-align: center;
-  }
   /* Sidebar */
   .sidebar {
     margin-top: 50px;
@@ -1836,18 +1796,6 @@ General Styles - Owlcarousel
   .side-image-text {
     padding-left: 15px;
     padding-right: 15px;
-  }
-  /* Restaurant menu */
-  .menu-title,
-  .menu-detail,
-  .menu-price-detail {
-    text-align: center;
-  }
-  .align-center-sm {
-    text-align: center;
-  }
-  .align-left-sm {
-    text-align: left;
   }
 }
 
