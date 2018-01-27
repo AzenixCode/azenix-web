@@ -40,7 +40,11 @@ iframe {
   left: auto !important;
 }
 
-/* Transition elsements */
+.whitefont {
+  color: #fff;
+}
+
+/* Transition elements */
 a,
 .btn {
   transition: all 0.125s ease-in-out 0s;
@@ -1370,8 +1374,7 @@ Hero Slider
   margin: 16px 0 15px;
 }
 
-.features-icon,
-.whitefont {
+.features-title.whitefont {
   color: #fff;
 }
 
