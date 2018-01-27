@@ -1370,6 +1370,11 @@ Hero Slider
   margin: 16px 0 15px;
 }
 
+.features-icon,
+.whitefont {
+  color: #fff;
+}
+
 .alt-features-item {
   position: relative;
   padding-left: 55px;

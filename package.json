@@ -6,6 +6,7 @@
     "start": "node server.js"
   },
   "dependencies": {
-    "express": "^4.16.2"
+    "compression": "^1.7.1",
+    "express": "latest"
   }
 }
