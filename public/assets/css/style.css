@@ -1664,6 +1664,33 @@ Hero Slider
   }
 }
 
+@media (min-width: 1200px) {
+  .pull-right-lg {
+      float: right;
+  }
+  .pull-left-lg {
+    float: left;
+  }
+}
+
+@media (min-width: 992px) {
+  .pull-right-md {
+    float: right;
+}
+.pull-left-md {
+  float: left;
+  }
+}
+
+@media (min-width: 768px) {
+  .pull-right-sm {
+    float: right;
+}
+.pull-left-sm {
+  float: left;
+  }
+}
+
 @media (max-width: 1050px) {
   /* Navbar */
   .navbar-custom {
