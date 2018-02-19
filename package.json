@@ -1,10 +1,12 @@
 {
   "name": "azenix-web",
   "version": "1.0.0",
+  "productName": "Azenix Website",
   "description": "AzeniX Website",
   "contributors": [
     "Daniel Nováčik",
-    "Heye Everts"
+    "Heye Everts",
+    "Ekaterina Budnikov"
   ],
   "scripts": {
     "create-dirs": "mkdirp public/assets/js/min && mkdirp public/assets/css/min",

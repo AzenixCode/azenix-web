@@ -172,7 +172,7 @@ a,
 .module,
 .module-small {
   position: relative;
-  padding: 140px 0;
+  padding: 80px 0;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
@@ -1721,6 +1721,12 @@ Hero Slider
   .navbar-custom li > a:hover {
     background: rgba(255, 255, 255, 0.1) !important;
   }
+
+  .navbar-custom.navbar-transparent .nav li>a {
+    position: relative;
+    color: rgba(255,255,255,.7);
+  }
+
   .navbar-custom .navbar-nav .open .dropdown-menu .dropdown-header,
   .navbar-custom .navbar-nav .open .dropdown-menu > li > a {
     padding: 10px 25px;
@@ -1813,5 +1819,17 @@ Hero Slider
   .works-grid-4 .work-item,
   .works-grid-5 .work-item {
     width: 100%;
+  }
+}
+
+@media (max-width: 426px) {
+  .azenix-title-size-1 {
+    width: 65%;
+  }
+  .azenix-title-size-2 h1 {
+    font-size: 16px;
+  }
+  .azenix-title-size-2 h2 {
+    font-size: 25px;
   }
 }
