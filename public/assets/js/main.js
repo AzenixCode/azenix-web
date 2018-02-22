@@ -279,8 +279,14 @@
                         .data('countto');
                     $(this)
                         .find('.count-to')
-                        .countTo({from: 0, to: number, speed: 1200, refreshInterval: 30});
+                        .countTo({from: 0, to: number, speed: 1200, refreshInterval: 30,
+                        onComplete: function (value) { 
+                            if ($(this).data("append")) {
+                                $(this).text($(this).text() + ' ' + $(this).data("append"));
+                            }
+                        }
                 });
+            });
         });
 
         /* ---------------------------------------------- /*
